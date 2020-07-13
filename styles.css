@@ -1,0 +1,289 @@
+/*Default style for all*/
+html 
+{
+	background-color: black;
+	color: white;
+	font-size: 1.5rem;
+	font-family: sans-serif;
+}
+
+/*applied where needed: index background + nav*/
+.gradient
+{
+	width:100%;
+	background-image: linear-gradient(white,gray 18%,black 60%);
+}
+
+.gradient2
+{
+	width:100%;
+	background-image: linear-gradient(white 0.05%,gray 10%,black 35%);
+}
+/*used where needed: navigation "back to top"*/
+.border
+{
+	border: solid gray;
+	float: right;
+	width:20%;
+	padding:  25px 0px 25px 0px;
+}
+
+/*Uniform navigation style for all pages*/
+nav
+{
+	text-align: center;
+	cursor: pointer;
+	padding: 1px;
+	opacity: 0.9;
+	width: 100%;
+	margin-left: :0px;
+}
+
+nav ul
+{
+	list-style: none;
+}
+
+nav li
+{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav a
+{
+	text-decoration: none;
+}
+
+nav a:hover
+{
+	background-color: black;
+	font-weight: bold;
+	padding: 25px;
+}
+
+a
+{
+	color: white;
+}
+
+a:visited
+{
+	color: white;
+}
+/*end of navigation formatting*/
+
+/*formatting for contact page*/
+.message
+{
+	display: block;
+	border: 2px solid white;
+	max-width: 30%;
+	overflow: auto;
+}
+
+	/*Form properties*/
+	form
+	{
+		font-size: 1.2em;
+		margin-left: 50px;
+	}
+
+	label	
+	{
+		cursor: pointer;
+	}
+
+/*icons in contact and index pages*/
+.icons
+{
+	margin-left: 35%;
+}
+
+.icons img
+{
+	max-width: 70%;
+	height: 10vh;
+	border: solid white;
+	border-radius: 100%;
+	margin: 7px;
+	background-color: white;
+}
+
+
+.icons img:hover
+{
+	border: solid gray;
+}
+
+/*end of contact page format*/
+
+
+
+/*index*/
+.description
+{
+	margin-left: 37%;
+	color: gray;
+}
+
+.hiddenTreasure img
+{
+	max-width: 80%;
+	height:55vh;
+	float: left;
+	opacity: 0;
+}
+
+.hiddenTreasure img:hover
+{
+	opacity: 1;
+	transition: opacity 1s ease-in;
+}
+
+
+
+.profile img
+{	
+	position: relative;
+	max-width: 70%;
+	height: 30vh;
+	left: 40%;
+	border: solid gray;
+	border-radius: 5%;
+	margin-top: 30px;
+	box-shadow: -20px -20px black;
+}
+
+.profile img:hover
+{
+	opacity: 0.2;
+	transition: opacity 1s ease-in-out;
+	background-color: gray;
+	border: solid black;
+	cursor: pointer;
+
+}
+
+/*blog*/
+.blogImage img
+{
+	border: solid white;
+	margin: 20px;
+	max-width: 100%;
+	max-height: 38vh;
+	background-color: transparent;
+}
+
+.blogImage img:hover
+{
+	cursor: pointer;
+	transform: scale(1.1);
+	transition: 0.5s ease-in-out;
+	border: solid gray;
+
+}
+.blogBackground
+{
+	background-image: url("blog_files/waterf.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	max-width: 100%;
+	max-height: 50vh; 
+	z-index: 1000;
+}
+
+
+.portfolio
+{
+	margin-left: 40px;
+}
+
+/*portfolio*/
+.portfolio img
+{
+	border:solid white;
+	margin:20px;
+	max-width: 100%;
+	max-height: 80vh;
+}
+
+.underline
+{
+	text-decoration: underline;
+}
+
+.titles
+{
+	text-align: center;
+	font-weight: lighter;
+	font-variant: small-caps;
+}
+
+.noList
+{
+	list-style: none;
+}
+
+.captions
+{
+	text-align: center;
+	font-size: 1rem;
+	font-style: italic;
+}
+
+@media screen and (max-width: 768px)
+{
+	header ,body
+	{
+		margin:0px;
+		text-align: center;
+		overflow: auto;
+	}	
+
+	.profile img
+	{
+		max-width: 100%;
+		left: 10%;
+	}
+
+	.blogImage, .description
+	{
+		margin-left: 10%;
+	}
+
+	.blogImage img, .icons img
+	{
+		display: list-item;
+	}
+
+	.border
+	{
+		width:100%;
+	}
+
+	.description
+	{
+		color: black;
+	}
+
+	.portfolio, .portfolio img
+	{
+		margin:0px;
+	}
+
+	nav li
+	{
+		margin:10px;
+		width: 100%;
+		display: block;
+		margin-right: 0px;
+	}
+
+	nav a:hover
+	{
+		background-color: gray;
+		padding: 0px 90px 0px 90px;
+	}
+	
+}
